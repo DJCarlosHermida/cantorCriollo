@@ -1624,9 +1624,19 @@ body {
   }
 }
 .cid-qwUtKjk2oY {
+  position: relative;
+  background-color: #6b6b6b;
   background-image: url("../../../assets/images/para_fondo_gris.jpg");
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-position: center top;
+  background-size: cover;
+  background-attachment: scroll;
+  padding-top: 0;
+  padding-bottom: 2rem;
+}
+.cid-qwUtKjk2oY > .container {
+  position: relative;
+  z-index: 1;
 }
 .cid-qwUtKjk2oY H1 {
   color: #ffffff;
@@ -1817,10 +1827,8 @@ body {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  margin-left: 75%;
-  
-
-  
+  justify-content: center;
+  margin-left: 0;
 }
 .cid-qwY6RwP6rL .social-list .mbr-iconfont-social {
   font-size: 1.2rem;
