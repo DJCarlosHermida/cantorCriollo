@@ -1881,3 +1881,100 @@ body {
     text-align: center !important;
   }
 }
+
+/* Libros: grilla tapas en fila */
+.libros-section-row {
+  margin-top: 6rem;
+  margin-bottom: 2rem;
+}
+@media (max-width: 991px) {
+  .libros-section-row {
+    margin-top: 5rem;
+  }
+}
+.libros-panel {
+  color: #000;
+  background-color: #ffa420;
+  border-radius: 14px;
+  padding: 1.35rem 1rem 2rem;
+  font-size: 1.05rem;
+  box-shadow: 0 10px 32px rgba(0, 0, 0, 0.12);
+}
+.libros-title {
+  color: #000;
+  font-size: 1.85rem;
+  text-align: center;
+  margin: 0.35rem 0 1.1rem;
+  font-weight: 700;
+}
+.libros-grid {
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
+}
+.libros-grid > [class*="col-"] {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+.libro-col {
+  margin-bottom: 1.75rem;
+  display: flex;
+  justify-content: center;
+}
+@media (min-width: 992px) {
+  .libro-col {
+    margin-bottom: 0.5rem;
+  }
+}
+.libro-card {
+  width: 100%;
+  max-width: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.libro-cover-link {
+  display: block;
+  width: 100%;
+  position: relative;
+  aspect-ratio: 2 / 3;
+  border-radius: 10px;
+  overflow: hidden;
+  line-height: 0;
+  background: #3a3428;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.14);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.libro-cover-link:hover,
+.libro-cover-link:focus {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.2);
+}
+.libro-cover-img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10px;
+}
+/* Primer libro: sin recorte fuerte para leer bien el texto de la tapa */
+.libro-cover-link--texto-completo {
+  background: rgba(60, 52, 40, 0.35);
+}
+.libro-cover-link--texto-completo .libro-cover-img {
+  object-fit: contain;
+  object-position: center;
+}
+.libro-meta {
+  margin: 0.9rem 0 0;
+  padding: 0 0.35rem;
+  font-size: 0.98rem;
+  line-height: 1.4;
+}
+.libro-meta b {
+  font-weight: 700;
+}
