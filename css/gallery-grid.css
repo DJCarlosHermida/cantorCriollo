@@ -34,14 +34,11 @@ body {
 
 .tz-gallery {
     padding: 2px;
-    
-    
 }
 
 .tz-gallery .lightbox img {
     width: 30%;
     margin-top: 20px;
-    
     transition: 0.2s ease-in-out;
     box-shadow: 0 2px 3px rgba(0,0,0,0.2);
 }
@@ -54,14 +51,8 @@ body {
 
 .tz-gallery img {
     border-radius: 10px;
-   width: 80px !important;
-    
-    
-    
-    
-    
-
-    
+    width: 80px !important;
+    height: auto;
 }
 
 .baguetteBox-button {
@@ -76,5 +67,27 @@ body {
 
     .container.gallery-container {
         border-radius: 0;
+    }
+
+    .tz-gallery .row {
+        margin: 15px !important;
+        justify-content: center;
+    }
+
+    .tz-gallery .lightbox {
+        display: inline-block;
+        max-width: 100%;
+    }
+
+    .tz-gallery .lightbox img,
+    .tz-gallery img {
+        width: min(42vw, 150px) !important;
+        max-width: 100%;
+    }
+
+    .tz-gallery p[style] {
+        width: min(42vw, 150px) !important;
+        margin-left: auto;
+        margin-right: auto;
     }
 }

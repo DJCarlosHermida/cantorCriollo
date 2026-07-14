@@ -4332,3 +4332,33 @@ footer .copyright-footer p a:hover {
   width: 100%;
   height: auto;
 }
+
+/* Ajustes generales para que el contenido multimedia no desborde en móviles. */
+iframe,
+audio,
+video {
+  max-width: 100%;
+}
+
+audio {
+  width: 100%;
+}
+
+.navbar-nav.nav-dropdown {
+  max-width: 100%;
+}
+
+@media screen and (max-width: 767px) {
+  .navbar-collapse[style],
+  .navbar-nav.nav-dropdown[style],
+  .footer4 .social-list[style] {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    width: 100% !important;
+  }
+
+  .footer4 img {
+    max-width: 100%;
+    height: auto !important;
+  }
+}
